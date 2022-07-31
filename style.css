@@ -187,9 +187,7 @@ body{
 
 
 @media (max-width: 700px){
-    .main{
-        height: fit-content;
-    }
+    
     .card{
         width: 90%;
         flex-direction: column;
