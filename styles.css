@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+.card{
+    background: white;
+    width: 550px;
+    height: 420px;
+    display: flex;
+    border-radius: 10px;
+    max-width: 550px;
+    max-height: 420px;
+    
+}
+.img-part{
+    width: 50%;
+    height: 100%;
+    
+}
+.mobile-img{
+    display: none;
+}
+.img-part img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.text-part{
+    width: 50%;
+    height: 100%;
+    padding:0 20px 0 30px;
+}
+.text-part h1{
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+.product-name{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.product-french{
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    line-height: 1;
+}
+.product-french span{
+    display: block;
+}
+.product-desc{
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 100;
+    padding-top: 20px;
+}
+.product-price{
+    display: flex;
+}
+.new-price{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    margin-bottom: 0px;
+}
+.old-price{
+    position: relative;
+    top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Fraunces', serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 20px;
+    color: hsl(228, 12%, 48%);
+    align-self:center;
+}
+.add-to-cart{
+    padding: 0 0 30px 0;
+    padding-top: 20px;
+}
+.add-to-cart button{
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border: 0px;
+    border-radius: 5px;
+    padding: 4%;
+    width: 90%;
+}
+button img{
+    height: 12px;
+    width: 12px;
+    padding-right: 5px;
+}
+
+@media (max-width:700px)
+{
+    body{
+        display: flex;
+        align-items: center;
+        background-color: hsl(30, 38%, 92%);
+        padding: 30px;
+    }
+    main{
+        height: min-content;
+    }
+    .mobile-img{
+        display: block;
+    }
+    .desktop-img{
+        display: none;
+    }
+    .card{
+        max-width: 400px;
+        max-height: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;   
+    }
+    .img-part{
+        width: 100%;
+        height: 40%;
+    }
+    .img-part img{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    .text-part{
+        width: 100%;
+        height: 60%;
+        padding: 0px;
+    }
+    .product-name{
+        padding: 0px 20px;
+    }
+    .product-french{
+        padding: 30px 20px;
+    }
+    .product-desc{
+        padding: 0px 20px;
+    }
+    .product-price{
+        padding: 0px 0px 20px 20px;
+    }
+    .add-to-cart{
+        padding: 0px 0px 40px 20px;
+    }
+    .add-to-cart button {
+        color: white;
+        background-color: hsl(158, 36%, 37%);
+        border: 0px;
+        border-radius: 5px;
+        padding: 4%;
+        width: 80%;
+    }
+}
